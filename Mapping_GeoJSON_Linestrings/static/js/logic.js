@@ -49,9 +49,9 @@ d3.json(torontoData).then(function(data) {
 L.geoJSON(data, {
   style: myStyle,
   onEachFeature: function(feature, layer){
-    layer.bindPopup("<h3>" + "Airline: " + feature.properties.airline + 
+    layer.bindPopup("<h2>" + "Airline: " + feature.properties.airline + 
     "<br>" + "________________________________" + "</br>" +
-    "<br>" + "Destination: " +  feature.properties.dst + "</br>" + "</h3>");
+    "<br>" + "Destination: " +  feature.properties.dst + "</br>" + "</h2>");
   }
 }).addTo(map);
 });
